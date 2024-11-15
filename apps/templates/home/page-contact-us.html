@@ -1,70 +1,56 @@
-{% extends 'layouts/base.html' %}
+{% extends 'layouts/base-presentation.html' %}
 
-{% block title %} Contact US {% endblock title %}
+{% block title %} Atul Anand {% endblock title %}
 
 <!-- Specific CSS goes HERE -->
 {% block stylesheets %}{% endblock stylesheets %}
 
-{% block body_class %} contact-us {% endblock body_class %}
+{% block body_class %} connect with me {% endblock body_class %}
 
 {% block content %}
 
-  {% include "includes/navigation-light.html" %}
+<section class="py-10">
+  <div class="container">
+    <div class="row justify-space-between text-center py-2">
+      <div class="col-12 mx-auto">
 
-  <header>
-    <div class="page-header section-height-85">
-      <div>
-        <img class="position-absolute fixed-top ms-auto w-50 h-100 z-index-0 d-none d-sm-none d-md-block border-radius-section border-top-end-radius-0 border-top-start-radius-0 border-bottom-end-radius-0" src="/static/assets/img/curved-images/curved8.jpg">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 d-flex justify-content-center flex-column">
-            <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
-              <div class="text-center">
-                <h3 class="text-gradient text-primary">Contact us</h3>
-                <p class="mb-0">
-                  For further questions, including partnership opportunities, please email hello@creative-tim.com
-                  or contact using our contact form.
-                </p>
-              </div>
-              <form role="form" id="contact-form" method="post" autocomplete="off">
-                <div class="card-body pb-2">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <label>Full Name</label>
-                      <div class="input-group mb-4">
-                        <input class="form-control" placeholder="Full Name" aria-label="Full Name" type="text">
-                      </div>
-                    </div>
-                    <div class="col-md-6 ps-md-2">
-                      <label>Email</label>
-                      <div class="input-group">
-                        <input type="email" class="form-control" placeholder="hello@creative-tim.com">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group mb-0 mt-md-0 mt-4">
-                    <label>How can we help you?</label>
-                    <textarea name="message" class="form-control" id="message" rows="6" placeholder="Describe your problem in at least 250 characters"></textarea>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 text-center">
-                      <button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Send Message</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/atanand" target="_blank">
+          <button type="button" class="btn-icon btn btn-linkedin">
+            <span class="btn-inner--icon mr-1"><i class="fab fa-linkedin"></i></span>
+            <span class="btn-inner--text">LinkedIn</span>
+          </button>
+        </a>
+
+        <!-- Twitter Button -->
+        <a href="https://twitter.com/atulanand6" target="_blank">
+          <button type="button" class="btn-icon btn btn-twitter">
+            <span class="btn-inner--icon mr-1"><i class="fab fa-twitter"></i></span>
+            <span class="btn-inner--text">Twitter</span>
+          </button>
+        </a>
+
+        <!-- GitHub Button -->
+        <a href="https://github.com/atulanand25" target="_blank">
+          <button type="button" class="btn-github btn-icon btn">
+            <span class="btn-inner--icon mr-1"><i class="fab fa-github"></i></span>
+            <span class="btn-inner--text">Github</span>
+          </button>
+        </a>
+
       </div>
     </div>
-  </header>
+  </div>
+</section>
+
+
 
 {% endblock content %}
 
 <!-- Specific JS goes HERE --> 
 {% block javascripts %}
+
+{% include "includes/scripts.html" %}
 
   <script src="/static/assets/js/soft-design-system.min.js?v=1.0.1" type="text/javascript"></script>
 
