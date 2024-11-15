@@ -1,0 +1,47 @@
+{% extends 'layouts/base-presentation.html' %}
+
+{% block title %} Atul Anand {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} index-page {% endblock body_class %}
+
+{% block content %}
+
+<div class="under-construction">
+  <div class="message">Under Construction</div>
+  <div class="spinner">
+    <i class="fas fa-cogs"></i>
+  </div>
+</div>
+
+<style>
+  .under-construction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .spinner {
+    font-size: 40px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+
+
+{% endblock content %}

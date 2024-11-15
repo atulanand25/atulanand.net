@@ -1,0 +1,95 @@
+{% extends 'layouts/base-presentation.html' %}
+
+{% block title %} Atul Anand {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} index-page {% endblock body_class %}
+
+{% block content %}
+
+<header>
+  <div class="page-header section-height-100">
+    <div class="oblique position-absolute top-0 h-100 d-md-block d-none">
+      <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url(/static/assets/img/IMG_6060.jpg)"></div>
+    </div>
+    <div class="container">
+      <div class="row py-10">
+        <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+          <h1 class="text-gradient text-primary">Atul Anand</h1>
+          <h4 class="mb-4">Network Engineer</h4>
+          <p class="lead pe-5 me-5">I'm passionate about solving complex networking challenges and leveraging automation tools. </p>
+          <div class="buttons">
+            <a href="maintenance">
+              <button type="button" class="btn bg-gradient-primary mt-4">View My Work</button>
+            </a>
+            <a href="maintenance">
+              <button type="button" class="btn text-primary shadow-none mt-4">Learn More About Me</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- -------- START Certifications Section with icons, descriptions, and verification links -------- -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center justify-content-center">
+        <div>
+          <h3 class="text-gradient text-primary mb-0 mt-2">My Professional Certifications</h3>
+          <h3>Credentials that Define My Expertise</h3>
+          <p>These certifications showcase my expertise in network engineering, security, and automation across various industry leaders. I’ve earned certifications from top vendors like <strong>Cisco</strong>, <strong>Aruba</strong>, and <strong>Juniper</strong>, each designed to reinforce my skills and demonstrate my commitment to staying at the forefront of technology. Explore each credential below, and learn more about how these certifications shape my professional journey.</p>
+          <a href="certifications" class="text-primary icon-move-right">Discover All My Certifications
+            <i class="fas fa-arrow-right text-sm ms-1"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+        <!-- CCNP Security -->
+        <div class="p-3 info-horizontal">
+          <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+            <i class="fas fa-shield-alt opacity-10"></i>
+          </div>
+          <div class="description ps-3">
+            <h6 class="mb-0">Cisco Certified Network Professional (CCNP Security)</h6>
+            <p class="mb-0">Expertise in secure network infrastructure, monitoring, and threat mitigation.</p>
+            <a href="https://www.credly.com/badges/c831e280-18c3-4709-a152-1aaf374cd228/" class="text-primary">Verify</a>
+          </div>
+        </div>
+
+        <!-- Cisco DevNet Associate -->
+        <div class="p-3 info-horizontal">
+          <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+            <i class="fas fa-network-wired opacity-10"></i>
+          </div>
+          <div class="description ps-3">
+            <h6 class="mb-0">Cisco DevNet Associate</h6>
+            <p class="mb-0">Proficiency in network automation, APIs, and DevOps practices.</p>
+            <a href="https://www.credly.com/badges/54743c78-7950-4ccc-9621-aacfe484f54a/" class="text-primary">Verify</a>
+          </div>
+        </div>
+
+        <!-- CCNA -->
+        <div class="p-3 info-horizontal">
+          <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+            <i class="fas fa-certificate opacity-10"></i>
+          </div>
+          <div class="description ps-3">
+            <h6 class="mb-0">Cisco Certified Network Associate (CCNA)</h6>
+            <p class="mb-0">Strong foundation in networking fundamentals and enterprise infrastructure.</p>
+            <a href="https://www.credly.com/badges/de3ff984-2916-4305-a6a9-d30c9a16d598/" class="text-primary">Verify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- -------- END Certifications Section with icons, descriptions, and verification links -------- -->
+
+
+
+{% endblock content %}
