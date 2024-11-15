@@ -9,10 +9,9 @@ from flask import Flask
 from importlib import import_module
 
 
-
 def register_blueprints(app):
-    for module_name in ['home']:
-        module = import_module('apps.{}.routes'.format(module_name))
+    for module_name in ["home"]:
+        module = import_module("apps.{}.routes".format(module_name))
         app.register_blueprint(module.blueprint)
 
 

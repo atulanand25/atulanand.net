@@ -1,6 +1,6 @@
 # [Personal Website](https://atulanand.net/)
 
-`Open-Source` **[Flask App](https://atul.anand.net/)** crafted on top of a modern design. Designed for those who like bold elements and beautiful websites, **Soft UI Design** is ready to help you create stunning websites and web apps. **Soft UI Design** is built with over 70 frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining.
+`Open-Source` **[Flask App](https://atulanand.net/)** crafted on top of a modern design. Designed for those who like bold elements and beautiful websites, **Soft UI Design** is ready to help you create stunning websites and web apps. **Soft UI Design** is built with over 70 frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining.
 
 
 ## Start with `Docker`
@@ -29,8 +29,8 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 > Download the code 
 
 ```bash
-$ git clone https://github.com/app-generator/flask-soft-ui-design.git
-$ cd flask-soft-ui-design
+$ git clone https://github.com/atulanand25/atulanand.net.git
+$ cd atulanand.net
 ```
 
 <br />
