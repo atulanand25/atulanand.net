@@ -3379,7 +3379,7 @@ textarea.form-control,textarea.form-control-lg,textarea.form-control-sm {
 .btn {
     --bs-btn-padding-x: 1.5rem;
     --bs-btn-padding-y: 0.75rem;
-    --bs-btn-font-size: 0.75rem;
+    --bs-btn-font-size: 1rem;
     --bs-btn-font-weight: 700;
     --bs-btn-line-height: 1.4;
     --bs-btn-color: var(--bs-body-color);
@@ -4281,7 +4281,7 @@ textarea.form-control,textarea.form-control-lg,textarea.form-control-sm {
 
 .nav {
     --bs-nav-link-padding-x: 1rem;
-    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-padding-y: 1rem;
     --bs-nav-link-color: var(--bs-link-color);
     --bs-nav-link-hover-color: var(--bs-link-hover-color);
     --bs-nav-link-disabled-color: #52525b;
@@ -4904,9 +4904,10 @@ textarea.form-control,textarea.form-control-lg,textarea.form-control-sm {
 }
 
 .card {
+    --bs-card-height: 100%;
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
-    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-spacer-y: 0rem;
     --bs-card-border-width: 0;
     --bs-card-border-color: rgba(0,0,0,.125);
     --bs-card-border-radius: 0.75rem;
@@ -4965,7 +4966,7 @@ textarea.form-control,textarea.form-control-lg,textarea.form-control-sm {
 
 .card-title {
     margin-bottom: var(--bs-card-title-spacer-y);
-    color: var(--bs-card-title-color)
+    color: #f97316!important;
 }
 
 .card-subtitle {
@@ -22678,7 +22679,7 @@ html {
     color: #27272a;
     padding: .5rem 1rem;
     font-weight: 400;
-    font-size: .75rem
+    font-size: 1rem
 }
 
 .navbar.navbar-absolute {
