@@ -1,0 +1,124 @@
+{% extends 'layouts/base-presentation.html' %}
+
+{% block title %} Atul Anand {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} resume {% endblock body_class %}
+
+{% block content %}
+
+<div class="container-fluid" style="margin-top: 80px;">
+  <!-- Header Section (Profile) -->
+  <div class="page-header min-height-200 border-radius-xl mt-4" style="background-image: url('/static/assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
+    <span class="mask opacity-6"></span>
+  </div>
+  <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
+    <div class="row gx-4">
+      <div class="col-auto">
+        <div class="avatar avatar-xl position-relative">
+          <img src="/static/assets/img/profile.png" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+        </div>
+      </div>
+      <div class="col-auto my-auto">
+        <div class="h-100">
+          <h1 class="text-gradient text-primary">Atul Anand</h1>
+          <p class="mb-0 font-weight-bold text-xl">Network Engineer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Sections -->
+  <div class="row">
+    <!-- Contact Information -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header text-primary">Contact Information</div>
+        <div class="card-body">
+          <p>Email: <a href="mailto:atul.anand@colorado.edu">atul.anand@colorado.edu</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/atanand" target="_blank">linkedin.com/in/atanand</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header text-primary">Skills</div>
+        <div class="card-body">
+          <ul>
+            <li>Networking (CCNP Security)</li>
+            <li>DevOps & Automation</li>
+            <li>Python & Bash Scripting</li>
+            <li>Apache Web Server Configuration</li>
+            <li>Docker & Containerization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+  <div class="card-header text-primary">Experience</div>
+  <div class="card-body">
+    <div class="row">
+      <!-- Experience-1 -->
+      <div class="col-md-6">
+        <h5>Cisco Systems India Pvt Ltd</h5>
+        <h6>Technical Consulting Engineer (2022 - 2024)</h6>
+        <ul>
+          <li>Provided technical support and troubleshooting for enterprise-level customers.</li>
+          <li>Collaborated in a Tier 3 TAC team to resolve complex networking issues.</li>
+          <li>Developed and implemented network automation solutions to improve efficiency.</li>
+        </ul>
+      </div>
+
+      <!-- Experience-2 -->
+      <div class="col-md-6">
+        <h5>Ivanti Software India Pvt Ltd</h5>
+        <h6>Technical Solutions Engineer (2022 - 2024)</h6>
+        <ul>
+          <li>Provided technical support and troubleshooting for enterprise-level customers.</li>
+          <li>Collaborated in a Tier 3 TAC team to resolve complex networking issues.</li>
+          <li>Developed and implemented network automation solutions to improve efficiency.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <!-- Education -->
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header text-primary">Education</div>
+        <div class="card-body">
+          <div class="row">
+            <!-- Education - Master of Science -->
+            <div class="col-md-6">
+              <h5>University of Colorado Boulder</h5>
+              <h6>MS in Network Engineering (2024 - present)</h6>
+                <ul>
+                  <li>Focused on computer networks, security, and automation.</li>
+                </ul>
+            </div>
+
+            <!-- Education - B.Tech -->
+            <div class="col-md-6">
+              <h5>Bharath University</h5>
+              <h6>B.Tech in Computer Science and Engineering (CSE) (2014 - 2018)</h6>
+              <ul>
+                <li>Focused on Computer Networks.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
