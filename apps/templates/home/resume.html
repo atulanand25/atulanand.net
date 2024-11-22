@@ -10,9 +10,8 @@
 {% block content %}
 
 <div class="container-fluid" style="margin-top: 80px;">
-  <!-- Header Section (Profile) -->
   <div class="page-header min-height-200 border-radius-xl mt-4" style="background-image: url('/static/assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
-    <span class="mask opacity-6"></span>
+      <span class="mask opacity-6"></span>
   </div>
   <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
     <div class="row gx-4">
@@ -22,92 +21,139 @@
         </div>
       </div>
       <div class="col-auto my-auto">
-        <div class="h-100">
-          <h1 class="text-gradient text-primary">Atul Anand</h1>
-          <p class="mb-0 font-weight-bold text-xl">Network Engineer</p>
-        </div>
-      </div>
+  <div class="h-100">
+    <h1 class="text-gradient text-primary mb-0">Atul Anand</h1>
+
+    <!-- Address with Pin Icon Before -->
+    <div class="d-flex align-items-center">
+      <span class="fas fa-map-marker-alt pin-icon" style="color: #f97316; font-size: 1.5rem; margin-right: 15px;"></span>
+      <h4 class="mb-0 address-text">Boulder, CO 80301</h4>
     </div>
   </div>
+</div>
 
-  <!-- Resume Sections -->
-  <div class="row">
-    <!-- Contact Information -->
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header text-primary">Contact Information</div>
-        <div class="card-body">
-          <p>Email: <a href="mailto:atul.anand@colorado.edu">atul.anand@colorado.edu</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/atanand" target="_blank">linkedin.com/in/atanand</a></p>
-        </div>
-      </div>
-    </div>
+      <div class="col-lg-6 my-sm-auto ms-sm-auto me-sm-0">
+        <div class="nav-wrapper position-relative end-0">
+          <ul class="nav nav-pills nav-fill p-1 bg-transparent d-flex justify-content-center">
+          <!-- Email Link -->
+          <li class="nav-item">
+            <a href="mailto:atulanand@colorado.edu">
+              <button type="button" class="btn-icon btn btn-email">
+                <span class="btn-inner--icon mr-1"><i class="fas fa-envelope"></i></span>
+                <span class="btn-inner--text">Email</span>
+              </button>
+            </a>
+          </li>
 
-    <!-- Skills -->
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header text-primary">Skills</div>
-        <div class="card-body">
-          <ul>
-            <li>Networking (CCNP Security)</li>
-            <li>DevOps & Automation</li>
-            <li>Python & Bash Scripting</li>
-            <li>Apache Web Server Configuration</li>
-            <li>Docker & Containerization</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+          <!-- LinkedIn Link -->
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/atanand" target="_blank">
+              <button type="button" class="btn-icon btn btn-linkedin">
+                <span class="btn-inner--icon mr-1"><i class="fab fa-linkedin"></i></span>
+                <span class="btn-inner--text">LinkedIn</span>
+              </button>
+            </a>
+          </li>
 
-  <div class="card">
-  <div class="card-header text-primary">Experience</div>
-  <div class="card-body">
-    <div class="row">
-      <!-- Experience-1 -->
-      <div class="col-md-6">
-        <h5>Cisco Systems India Pvt Ltd</h5>
-        <h6>Technical Consulting Engineer (2022 - 2024)</h6>
-        <ul>
-          <li>Provided technical support and troubleshooting for enterprise-level customers.</li>
-          <li>Collaborated in a Tier 3 TAC team to resolve complex networking issues.</li>
-          <li>Developed and implemented network automation solutions to improve efficiency.</li>
+          <!-- GitHub Link -->
+          <li class="nav-item">
+            <a href="https://github.com/atulanand25" target="_blank">
+              <button type="button" class="btn-icon btn btn-github">
+                <span class="btn-inner--icon mr-1"><i class="fab fa-github"></i></span>
+                <span class="btn-inner--text">GitHub</span>
+              </button>
+            </a>
+          </li>
         </ul>
-      </div>
-
-      <!-- Experience-2 -->
-      <div class="col-md-6">
-        <h5>Ivanti Software India Pvt Ltd</h5>
-        <h6>Technical Solutions Engineer (2022 - 2024)</h6>
-        <ul>
-          <li>Provided technical support and troubleshooting for enterprise-level customers.</li>
-          <li>Collaborated in a Tier 3 TAC team to resolve complex networking issues.</li>
-          <li>Developed and implemented network automation solutions to improve efficiency.</li>
-        </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 
+<div class="container-fluid py-4">
+  <!-- Resume Sections -->
+  <div class="row">
+    <!-- Skills -->
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header text-primary fw-bold">Skills</div>
+        <div class="card-body">
+        <ul style="list-style: none; padding-left: 0;">
+          <li class="p-2"><strong><i class="skill-icon fas fa-network-wired"></i> Networking:</strong> TCP/IP Stack, VLAN, STP, DNS, DHCP, AAA, NAC Solutions (Aruba ClearPass, Cisco ISE), VPN Solutions (Ivanti Connect Secure - Remote SSL VPN), Wireshark Analysis</li>
+          <li class="p-2"><strong><i class="skill-icon fas fa-shield-alt"></i> Security:</strong> Endpoint Security, EDR (Extended Detection and Response), XDR, Cisco Secure Malware Analytics, Public Key Infrastructure (PKI)</li>
+          <li class="p-2"><strong><i class="skill-icon fas fa-server"></i> Linux & Server Management:</strong> Apache, Nginx, Web Server Management, <i class="skill-icon fa-brands fa-centos"></i> CentOS, <i class="skill-icon fab fa-debian"></i> Debian, Active Directory, MDM Solutions (Microsoft Intune, MobileIron, AirWatch)</li>
+          <li class="p-2"><strong><i class="skill-icon fas fa-code"></i> Development & Automation:</strong> Flask, Django, Rest API, <i class="skill-icon fa-solid fa-database"></i> SQL (SQLite), NoSQL (MongoDB), <i class="skill-icon fab fa-python"></i> Python, <i class="skill-icon fab fa-docker"></i> Docker & Containerization, <i class="skill-icon fas fa-cogs"></i> Ansible, CI/CD, <i class="skill-icon fa-brands fa-github"></i> GitHub</li>
+          <li class="p-2"><strong><i class="skill-icon fas fa-cloud"></i> Cloud & Monitoring:</strong> <i class="skill-icon fab fa-aws"></i> AWS, <i class="skill-icon fab fa-datadog"></i> Datadog</li>
+          <li class="p-2"><strong><i class="skill-icon fas fa-tasks"></i> Project Management & Tools:</strong> <i class="skill-icon fab fa-jira"></i> Jira, ServiceNow, PyCharm, <i class="skill-icon fa-brands fa-jsfiddle"></i> Fiddler, <i class="skill-icon fas fa-postman"></i>Postman</li>
+          <li class="p-2"><strong><i class="skill-icon fas fa-bug"></i> Debugging & Troubleshooting:</strong> Strong Debugging Skills, Problem Identification & Resolution</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header text-primary fw-bold">Professional Experience</div>
+    <div class="card-body">
+      <div class="row">
+        <!-- Experience-1 -->
+        <div class="col-md-12">
+          <h5>Cisco Systems India Pvt Ltd</h5>
+          <h6>Technical Consulting Engineer (July 2022 – Aug 2024)</h6>
+          <ul>
+            <li>Resolved issues with Cisco AMP, Malware Analytics, and Threat Analysis by coordinating with Cisco Engineering through Jira, reducing ticket resolution times and improving customer satisfaction.</li>
+            <li>Served as the <strong>Subject Matter Expert (SME)</strong> for Cisco XDR modules, mentoring engineers and conducting knowledge transfer sessions, enhancing team expertise and operational efficiency.</li>
+            <li>Filed and tracked reported <strong>25+</strong> bugs with Cisco Engineering using Jira, addressing recurring software issues and ensuring timely fixes.</li>
+            <li>Developed automated workflows and an internal Django-based tool for attendance management, improving operational efficiency for internal processes.</li>
+            <li>Worked with diverse customers across various sectors, including public, telecom, and other industries, adapting solutions to meet sector-specific needs and requirements.</li>
+          </ul>
+        </div>
+
+        <div class="col-md-12">
+          <h5>Ivanti India Pvt Ltd</h5>
+          <h6>Technical Solutions Engineer (April 2021 – July 2022)</h6>
+          <ul>
+            <li>Resolved <strong>250+</strong> tickets for Pulse/Ivanti PPS (NAC Solution) products by coordinating troubleshooting efforts and escalating issues to Ivanti Engineering through Jira, ensuring timely fixes and increased customer satisfaction.</li>
+            <li>Replicated customer issues in-house, provided viable solutions, and improved first-call resolution rates for recurring technical problems.</li>
+            <li>Delivered detailed Root Cause Analysis (RCA) for reported issues, helping reduce the recurrence of problems and optimizing system performance.</li>
+            <li>Filed and tracked reported <strong>30+</strong> bugs with Ivanti Engineering using Jira, addressing recurring software issues and ensuring timely fixes.</li>
+          </ul>
+        </div>
+
+        <div class="col-md-12">
+          <h5>CSS Corp Pvt Ltd</h5>
+          <h6>Network Engineer (April 2019 – April 2021)</h6>
+          <ul>
+            <li>Resolved <strong>500+</strong> tickets related to Aruba ClearPass by coordinating with Aruba Engineering through Jira, ensuring timely fixes and improving customer satisfaction.</li>
+            <li>Replicated customer issues in-house and provided viable solutions, increasing the efficiency of issue resolution.</li>
+            <li>Delivered Root Cause Analysis (RCA) for critical issues, helping to reduce the recurrence of similar problems and enhancing system reliability.</li>
+            <li>Filed and tracked reported <strong>50+</strong> bugs with Aruba Engineering using Jira, addressing recurring software issues and ensuring timely fixes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row">
     <!-- Education -->
     <div class="col-md-12">
       <div class="card">
-        <div class="card-header text-primary">Education</div>
+        <div class="card-header text-primary fw-bold">Education</div>
         <div class="card-body">
           <div class="row">
             <!-- Education - Master of Science -->
-            <div class="col-md-6">
+            <div class="col-md-12">
               <h5>University of Colorado Boulder</h5>
               <h6>MS in Network Engineering (2024 - present)</h6>
                 <ul>
-                  <li>Focused on computer networks, security, and automation.</li>
+                  <li>Focused on Computer Networks, Security, and Automation.</li>
                 </ul>
             </div>
 
             <!-- Education - B.Tech -->
-            <div class="col-md-6">
+            <div class="col-md-12">
               <h5>Bharath University</h5>
               <h6>B.Tech in Computer Science and Engineering (CSE) (2014 - 2018)</h6>
               <ul>
@@ -119,6 +165,21 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <!-- Education -->
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header text-primary fw-bold">Awards</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <span class="fas fa-trophy" style="color: gold; display: inline; margin-right: 8px;"></span>
+              <h6 style="display: inline;">Tele-Comm Association Grad Fellowship <span class="fas fa-arrow-right" style="margin: 0 8px;"></span> University of Colorado Boulder <span style="font-weight: normal;">(2024)</span></h6>
+            </div>
+        </div>
+      </div>
+    </div>
 </div>
 
 {% endblock content %}

@@ -4991,7 +4991,8 @@ textarea.form-control,textarea.form-control-lg,textarea.form-control-sm {
 }
 
 .card-header:first-child {
-    border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0
+    border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+    font-size: larger;
 }
 
 .card-footer {
@@ -24342,6 +24343,20 @@ html {
     color: rgb(0,102.2348066298,155.5)
 }
 
+.btn.btn-email {
+    background-color: #f97316;
+    color: #fff
+}
+
+.btn.btn-email:focus,.btn.btn-email:hover {
+    background-color: rgb(249,115,22, 0.8);
+    color: #fff
+}
+
+.btn.btn-email:active,.btn.btn-email:active:focus,.btn.btn-email:focus {
+    box-shadow: none
+}
+
 .btn.btn-dribbble {
     background-color: #ea4c89;
     color: #fff
@@ -33738,4 +33753,8 @@ ul li.editMode input[type=text] {
     transition-timing-function: linear;
     transition-delay: 0s;
     transform: scale(1)
+}
+
+.skill-icon {
+  color: #f97316;
 }
